@@ -315,16 +315,57 @@ button { font-family: inherit; cursor: pointer; }
       </div>
       <div class="pills" role="tablist">
         <button class="pill on"  onclick="doFilter('all',this)"         role="tab">All</button>
+        <button class="pill"     onclick="doFilter('it',this)"          role="tab">IT</button>
         <button class="pill"     onclick="doFilter('hr',this)"          role="tab">HR</button>
         <button class="pill"     onclick="doFilter('safety',this)"      role="tab">Safety</button>
         <button class="pill"     onclick="doFilter('finance',this)"     role="tab">Finance</button>
         <button class="pill"     onclick="doFilter('travel',this)"      role="tab">Travel</button>
         <button class="pill"     onclick="doFilter('procurement',this)" role="tab">Procurement</button>
-        <button class="pill"     onclick="doFilter('it',this)"          role="tab">IT</button>
+        
       </div>
     </div>
 
+ <!-- ─── IT ─── -->
+    <div class="sh" data-sec="it">
+      <div class="sh-l">
+        <div class="sh-bar" style="background:var(--aqua)"></div>
+        <span class="sh-title">IT</span>
+      </div>
+    </div>
+    <div class="grid g3" id="grid-it">
 
+      <a class="card aq" data-cat="it"
+         href="https://wkf.ms/43hb5Cl" target="_blank" rel="noopener">
+        <div class="ca"></div>
+        <div class="ci">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <div><div class="ct">IT Support</div><div class="cd">Report issues, request equipment or access</div></div>
+        <div class="carr">↗</div>
+      </a>
+
+      <a class="card adb" data-cat="it"
+         href="https://YOUR-MONDAY-BOARD/assets" target="_blank" rel="noopener">
+        <div class="ca"></div>
+        <div class="ci">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#005D83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+            <line x1="12" y1="22.08" x2="12" y2="12"/>
+          </svg>
+        </div>
+        <div><div class="ct">Asset Register</div><div class="cd">Track devices, equipment, and IT asset</div></div>
+        <div class="carr">↗</div>
+      </a>
+
+      <a class="card card-add" data-cat="it" href="#" onclick="addLink(event)">
+        <div><div class="ai">＋</div><div class="ct">Add New Link</div><div class="cd" style="color:#9EAAB4">Expand this section</div></div>
+      </a>
+
+    </div>
     <!-- ─── HR ─── -->
     <div class="sh" data-sec="hr">
       <div class="sh-l">
@@ -551,47 +592,7 @@ button { font-family: inherit; cursor: pointer; }
     </div>
 
 
-    <!-- ─── IT ─── -->
-    <div class="sh" data-sec="it">
-      <div class="sh-l">
-        <div class="sh-bar" style="background:var(--aqua)"></div>
-        <span class="sh-title">IT</span>
-      </div>
-    </div>
-    <div class="grid g3" id="grid-it">
-
-      <a class="card aq" data-cat="it"
-         href="https://wkf.ms/43hb5Cl" target="_blank" rel="noopener">
-        <div class="ca"></div>
-        <div class="ci">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00A095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="3" width="20" height="14" rx="2"/>
-            <line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-          </svg>
-        </div>
-        <div><div class="ct">IT Support</div><div class="cd">Report issues, request equipment or access</div></div>
-        <div class="carr">↗</div>
-      </a>
-
-      <a class="card adb" data-cat="it"
-         href="https://YOUR-MONDAY-BOARD/assets" target="_blank" rel="noopener">
-        <div class="ca"></div>
-        <div class="ci">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#005D83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-            <line x1="12" y1="22.08" x2="12" y2="12"/>
-          </svg>
-        </div>
-        <div><div class="ct">Asset Register</div><div class="cd">Track devices, equipment, and IT asset</div></div>
-        <div class="carr">↗</div>
-      </a>
-
-      <a class="card card-add" data-cat="it" href="#" onclick="addLink(event)">
-        <div><div class="ai">＋</div><div class="ct">Add New Link</div><div class="cd" style="color:#9EAAB4">Expand this section</div></div>
-      </a>
-
-    </div>
+   
 
 
     <!-- ─── KEY CONTACTS ─── -->
